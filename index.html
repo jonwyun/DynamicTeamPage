@@ -12,19 +12,27 @@
     <title>Dynamic Team Page - Quatro</title>
 </head>
 <body>
-    <div class="full-width-grid-con" id="hero">
-        <img src="images/rainbow.jpg" alt="background" id="hero-main-play">
-        <div class="grid-con">
-            <img id="logo-fruit" src="images/logo-apple.svg" alt="logo-fruit">
-            <img id="logo-quatro" src="images/logo-quatro-h.svg" alt="logo-background">
-            <img id="profile-pic-left" src="" alt="profile picture">
-            <div id="profile-title-left"></div>
-            <div id="profile-title-right"></div>
-            <img id="profile-pic-right" src="" alt="profile picture">
+    <main>
+        <h1>The Creators of Quatro!</h1>
+        <div class="full-width-grid-con" id="hero">
+            <div class="grid-con">
+                <img id="profile-pic-left" src="images/jon.jpg" alt="profile picture">
+                <div id="profile-title-left">
+                    <button id="nathButton" data-member="jon">Learn about Jon</button>
+                </div>
+                <div id="profile-title-right">
+                    <button id="nathButton" data-member="moh">Learn about Moh</button>
+                </div>
+                <img id="profile-pic-right" src="images/moh.jpg" alt="profile picture">
+            </div>
         </div>
-    </div>
-
-
+    </main>
+    <div id="overlayPopup">
+		<div id="memberInfo">
+			<button id="closeBtn">X</button>
+			<img src="./images/#" alt="Member Profile" id="memberProfile" data-member="nath">
+		</div>		
+	</div>
     <script src="js/main.js"></script>   
 </body>
 </html>
