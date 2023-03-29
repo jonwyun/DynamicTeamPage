@@ -8,27 +8,12 @@ body {
     background-position: fixed;
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
-    /* font-family: 'Noto Serif', serif; */
 }
 
-h1 {
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #ffed94;
-    color: #6d5f55;
-    margin-top: 5px;
-    font-size: 30px;
-    font-weight: 600;
-    padding: 10px;
-    text-align: center;
-	border-radius: 30px;
- }
-
-.full-width-grid-con {
-    display: grid; 
-    grid-template-columns: 1fr minmax(0, 1920px) 1fr;  
+#container {
+    height: 1080px;
 }
- 
+
 .grid-con { 
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -39,32 +24,26 @@ h1 {
     padding-right: 62px;
 }
 
-#hero > img {
+h1 {
     grid-column: 1/-1;
-    grid-row: 1/1;
-    justify-self: center;
-}
+    /* text-transform: uppercase; */
+    color: #fff;
+    background-color: #ffed94;
+    color: #6d5f55;
+    margin-top: 30px;
+    font-size: 60px;
+    font-weight: 600;
+    padding: 30px;
+    text-align: center;
+	border-radius: 30px;
+    height: 60px;
+ }
 
-#hero .grid-con {
-    grid-column: 1/-1;
-    grid-row: 1/1;
-}
-
-.grid-con #logo-fruit {
-    grid-column: 2/3;
-    grid-row: 1/1;
-    width: 440px;
-    height: 440px;
-    z-index: 2;
-    margin-top: 40px;
-}
-
-.grid-con #logo-quatro {
-    grid-column: 3/-1;
-    grid-row: 1/1;
-    height: 500px;
-    margin: 100px 30px 50px 70px;
-}
+ h1 span {
+    font-weight: 200;
+    /* font-style: italic; */
+    font-family: 'Noto Serif', serif;
+ }
 
 #profile-pic-left {
     grid-column: 3/5;
@@ -82,7 +61,7 @@ h1 {
     width: 280px;
     height: 280px;
     border-radius: 30% 5%;
-    background-color: #6d5f55;
+    background-color: #b0ee7e;
     color: #707070;
     justify-self: right;
 }
@@ -93,7 +72,7 @@ h1 {
     width: 280px;
     height: 280px;
     border-radius: 5% 30%;
-    background-color: #6d5f55;
+    background-color: #b0ee7e;
     color: #707070;
 }
 
@@ -106,7 +85,10 @@ h1 {
     border: solid 1px;
 }
 
-.button {
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
     border-bottom: solid 1px #ffffff;
 }
 
@@ -116,10 +98,10 @@ h1 {
 
 .lightbox.slide-toggle {
     display: flex;
-    height: 50vh;
-    width: 50vw;
+    height: 500px;
+    width: 800px;
     background: rgba(255, 100, 81, 0.8);
-    position: absolute;
+    position: fixed;
     justify-self: center;
     align-self: center;
     z-index: 2;
@@ -137,3 +119,4 @@ h1 {
 }
 
 .lightbox_close:hover { opacity: 0.5; color: red; }
+
