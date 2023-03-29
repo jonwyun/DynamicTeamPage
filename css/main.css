@@ -3,9 +3,26 @@
 }
 
 body {
+    background-image: url(../images/background-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
     font-family: 'Ubuntu', sans-serif;
     /* font-family: 'Noto Serif', serif; */
 }
+
+h1 {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ffed94;
+    color: #6d5f55;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+	border-radius: 30px;
+ }
 
 .full-width-grid-con {
     display: grid; 
@@ -65,7 +82,7 @@ body {
     width: 280px;
     height: 280px;
     border-radius: 30% 5%;
-    background-color: #b0ee7e;
+    background-color: #6d5f55;
     color: #707070;
     justify-self: right;
 }
@@ -76,7 +93,7 @@ body {
     width: 280px;
     height: 280px;
     border-radius: 5% 30%;
-    background-color: #b0ee7e;
+    background-color: #6d5f55;
     color: #707070;
 }
 
