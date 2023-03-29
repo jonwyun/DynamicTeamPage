@@ -18,13 +18,15 @@ let team = [
         role : 'Developer',
         bio : 'August 15, 1969',
         skill : 'some bio info',
+        picture : 'images/logo-apple.svg'
     },
 
     {
         name : 'Mohamed Zarandah',
         role : 'Designer',
         bio : 'John',    
-        skill : 'some bio info',  
+        skill : 'some bio info',
+        picture : 'images/logo-apple.svg'  
     }
 ]
 
@@ -36,6 +38,7 @@ function getTeamData() {
     document.querySelector('.member-role').textContent = team[teamMember].role;
     document.querySelector('.member-bio').textContent = team[teamMember].bio;
     document.querySelector('.member-skill').textContent = team[teamMember].skill;
+    document.querySelector('.member-picture').src = team[teamMember].picture;
 }
 
 buttons.forEach(button => button.addEventListener("click", getTeamData));	
