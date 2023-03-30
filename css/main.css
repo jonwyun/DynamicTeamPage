@@ -41,7 +41,6 @@ h1 {
 
  h1 span {
     font-weight: 200;
-    /* font-style: italic; */
     font-family: 'Noto Serif', serif;
  }
 
@@ -62,7 +61,6 @@ h1 {
     height: 280px;
     border-radius: 30% 5%;
     background-color: #b0ee7e;
-    color: #707070;
     justify-self: right;
 }
 
@@ -73,7 +71,6 @@ h1 {
     height: 280px;
     border-radius: 5% 30%;
     background-color: #b0ee7e;
-    color: #707070;
 }
 
 #profile-pic-right {
@@ -85,11 +82,36 @@ h1 {
     border: solid 1px;
 }
 
+.name {
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #707070;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #707070;
+}
+
+.button-container {
+    text-align: center;
+}
+
 button {
     border: none;
     outline: none;
     background-color: transparent;
-    border-bottom: solid 1px #ffffff;
+    border-bottom: solid 1px #707070;
+    font-size: 20px;
+    font-weight: 300;
+    color: #707070;
+    font-style: italic;
 }
 
 .lightbox {
@@ -110,13 +132,58 @@ button {
 
  .lightbox_close {
     position: relative;
-    top: 20px;
-    left: 95%;
+    top: 10px;
+    left: 90%;
     color: white;
     font-size: 3em;
     text-decoration: none;
     font-weight: bolder;
 }
 
-.lightbox_close:hover { opacity: 0.5; color: red; }
+.lightbox_close:hover { opacity: 0.5; color: #707070; }
 
+#lightbox-con {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-column-gap: 10px;
+    padding: 0;
+}
+
+#lightbox-pic {
+    grid-column: 1/2;
+    width: 300px;
+}
+
+#lightbox-profile {
+    grid-column: 2/3;
+    margin-top: 30px;
+}
+
+li {
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    line-height: 150%;
+}
+
+#lightbox-name {
+    list-style-type: none;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+#lightbox-role {
+    
+}
+
+#lightbox-bio {
+
+}
+
+#lightbox-skill {
+
+}
