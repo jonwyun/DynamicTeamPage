@@ -103,7 +103,7 @@ h1 {
     text-align: center;
 }
 
-button {
+.button {
     border: none;
     outline: none;
     background-color: transparent;
@@ -119,14 +119,14 @@ button {
 }
 
 .lightbox.slide-toggle {
-    display: flex;
-    height: 500px;
+    display: flex ;
+    height: fit-content;
     width: 800px;
-    background: rgba(255, 100, 81, 0.8);
+    background: rgba(253, 120, 102, 0.8);
     position: fixed;
     justify-self: center;
     align-self: center;
-    z-index: 2;
+    z-index: 1;
     border-radius: 5%;
  }
 
@@ -187,3 +187,12 @@ li {
 #lightbox-skill {
 
 }
+
+.lightbox .member-picture {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-top: 170px;
+    margin-bottom: 170px;
+  }
