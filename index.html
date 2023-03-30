@@ -4,35 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">    
+    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Dynamic Team Page - Quatro</title>
 </head>
 <body>
-    <main>
-        <h1>The Creators of Quatro!</h1>
-        <div class="full-width-grid-con" id="hero">
-            <div class="grid-con">
-                <img id="profile-pic-left" src="images/jon.jpg" alt="profile picture">
-                <div id="profile-title-left">
-                    <button id="nathButton" data-member="jon">Learn about Jon</button>
-                </div>
-                <div id="profile-title-right">
-                    <button id="nathButton" data-member="moh">Learn about Moh</button>
-                </div>
-                <img id="profile-pic-right" src="images/moh.jpg" alt="profile picture">
+    <div class="grid-con" id="container">
+        <h1><span>The Creators of </span>Quatro!</h1>
+        <img id="profile-pic-left" src="images/jon.jpg" alt="profile picture">
+        <section id="profile-title-left">
+            <h2 class="hidden">Developer Profile</h2>
+            <p class="name">Jong Woog Yun</p>
+            <p class="title">Developer</p>
+            <div class="button-container">
+                <button data-member="0" class="button">Learn more!</button>
             </div>
+        </section>
+        <section id="profile-title-right">
+            <h2 class="hidden">Designer Profile</h2>
+            <p class="name">Mohamed Zarandah</p>
+            <p class="title">Designer</p>
+            <div class="button-container">
+                <button data-member="1" class="button">Learn more!</button>
+            </div>
+        </section>
+        <img id="profile-pic-right" src="images/moh.jpg" alt="profile picture">
+
+        <div class="lightbox">
+            <a href="" class="lightbox_close">x</a>
+            <section id="lightbox-con">
+                <h2 class="hidden">Profile Details</h2>
+                <img class="member-picture" id="lightbox-pic" src="" alt="profile picture full">
+                <ul id="lightbox-profile">
+                    <li class="member-name" id="lightbox-name"></li>
+                    <li class="member-role" id="lightbox-role"></li>
+                    <li class="member-bio" id="lightbox-bio"></li>
+                    <li class="member-skill" id="lightbox-skill"></li>
+                </ul>
+
+            </section>
         </div>
-    </main>
-    <div id="overlayPopup">
-		<div id="memberInfo">
-			<button id="closeBtn">X</button>
-			<img src="./images/#" alt="Member Profile" id="memberProfile" data-member="nath">
-		</div>		
-	</div>
+    </div>
+
     <script src="js/main.js"></script>   
 </body>
 </html>
