@@ -1,4 +1,4 @@
-// Bio Pop-up Section
+// Lightbox
 
 let buttons = document.querySelectorAll(".button");
 let lightboxCon = document.querySelector(".lightbox");
@@ -16,8 +16,8 @@ let team = [
     {
         name : 'Jong Woog Yun',
         role : 'Developer',
-        bio : 'Born in Korea. Former digital marketer and project manager. Good at client-role. Execellent at keeping everything lined up and this is the reason why he likes to code.',
-        skill : 'HTML, CSS, Javascript, Maxon Cinema 4D, Adobe After Effects, Adobe Premier Pro, Adobe Photoshop, Adobe Illustrator, Adobe XD',
+        bio : 'Jong Woog Yun, also known as "Jon," was born in Korea and moved to Canada to study Interactive Media Design at Fanshawe College. With extensive experience as a digital marketer and project manager for website development projects, he initially considered himself design-oriented. However, after learning to code, his perspective has shifted. Jon excels at keeping everything organized and this is one reason why he enjoys coding.',
+        skill : 'HTML, CSS, Javascript, Maxon Cinema 4D, Adobe After Effects, Adobe Premier Pro, Adobe Photoshop, Adobe Illustrator, Adobe XD, Adobe Lightroom, Adobe InDesign',
         picture : 'images/logo-apple.svg'
     },
 

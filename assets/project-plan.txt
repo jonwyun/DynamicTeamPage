@@ -1,0 +1,6 @@
+Dynamic Team Page
+
+1. Use arrays to show and hold team members’ bio
+2. Use lightbox or hamburger menu pop-up method in CSS to show the bio details on top of the index page  
+3. To get back to the index page from pop-up, use close button
+4. Will look for a way to use Javascript to change images constantly on the left side of the index page(-> this plan cancelled as the design changed)

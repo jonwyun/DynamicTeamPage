@@ -5,7 +5,6 @@
 body {
     background-image: url(../images/background-pattern.svg);
     background-repeat: no-repeat;
-    background-position: fixed;
     background-size: cover;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -119,9 +118,9 @@ h1 {
 }
 
 .lightbox.slide-toggle {
-    display: flex ;
+    display: flex;
     height: fit-content;
-    width: 800px;
+    width: 900px;
     background: rgba(253, 120, 102, 0.8);
     position: fixed;
     justify-self: center;
@@ -133,7 +132,7 @@ h1 {
  .lightbox_close {
     position: relative;
     top: 10px;
-    left: 90%;
+    left: 92%;
     color: white;
     font-size: 3em;
     text-decoration: none;
@@ -149,9 +148,14 @@ h1 {
     padding: 0;
 }
 
-#lightbox-pic {
+.member-picture {
+    display: block;
+    margin: 0 auto;
     grid-column: 1/2;
-    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 140px;
+    margin-bottom: 140px;
 }
 
 #lightbox-profile {
@@ -164,11 +168,11 @@ li {
     font-weight: 200;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 40px;
+    padding-right: 50px;
     line-height: 150%;
 }
 
-#lightbox-name {
+.member-name {
     list-style-type: none;
     font-size: 35px;
     font-weight: bolder;
@@ -176,23 +180,6 @@ li {
     padding: 0;
 }
 
-#lightbox-role {
-    
+#w3c {
+    text-align: center;
 }
-
-#lightbox-bio {
-
-}
-
-#lightbox-skill {
-
-}
-
-.lightbox .member-picture {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    margin-top: 170px;
-    margin-bottom: 170px;
-  }
