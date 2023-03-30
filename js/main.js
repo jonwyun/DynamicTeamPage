@@ -16,8 +16,8 @@ let team = [
     {
         name : 'Jong Woog Yun',
         role : 'Developer',
-        bio : 'August 15, 1969',
-        skill : 'some bio info',
+        bio : 'Born in Korea. Former digital marketer and project manager. Good at client-role. Execellent at keeping everything lined up and this is the reason why he likes to code.',
+        skill : 'HTML, CSS, Javascript, Maxon Cinema 4D, Adobe After Effects, Adobe Premier Pro, Adobe Photoshop, Adobe Illustrator, Adobe XD',
         picture : 'images/logo-apple.svg'
     },
 
