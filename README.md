@@ -5,8 +5,13 @@ Using an object in Javascript, when a user clicks the button to see the bio deta
 
 ## Credit
 
-Jong Woog Yun, Developer
-Mohamed Zarandah, Designer
+- Jong Woog Yun, Developer
+- Mohamed Zarandah, Designer
+
+# language used
+css
+html
+js
 
 ## License
 
